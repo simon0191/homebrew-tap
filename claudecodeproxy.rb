@@ -5,21 +5,21 @@
 class Claudecodeproxy < Formula
   desc "Anthropic Messages API proxy for the Claude CLI"
   homepage "https://github.com/simon0191/claudecodeproxy"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/simon0191/claudecodeproxy/releases/download/v0.1.3/claudecodeproxy_0.1.3_darwin_amd64.tar.gz"
-      sha256 "e42ea095e684e59047a99bc6878c025de9149f11e377fbe56b547d9e358bd8d8"
+      url "https://github.com/simon0191/claudecodeproxy/releases/download/v0.1.4/claudecodeproxy_0.1.4_darwin_amd64.tar.gz"
+      sha256 "6592cc42fc41386a9c894fc4312d5c903526bcd1aa88a32fb38953623e807377"
 
       define_method(:install) do
         bin.install "claudecodeproxy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/simon0191/claudecodeproxy/releases/download/v0.1.3/claudecodeproxy_0.1.3_darwin_arm64.tar.gz"
-      sha256 "29bf659b723fda7fd44316e874f375e66d74370e7eb42d810bad20c99a4f77fe"
+      url "https://github.com/simon0191/claudecodeproxy/releases/download/v0.1.4/claudecodeproxy_0.1.4_darwin_arm64.tar.gz"
+      sha256 "567b255671893aeb4cee433c0d1cb981024ebb9609a7d52dc037fd8d1534ff41"
 
       define_method(:install) do
         bin.install "claudecodeproxy"
@@ -29,15 +29,15 @@ class Claudecodeproxy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simon0191/claudecodeproxy/releases/download/v0.1.3/claudecodeproxy_0.1.3_linux_amd64.tar.gz"
-      sha256 "ee73939f05c4343671e7a8a197fafc7667611c0cdb3a4d71b2f09db60c818a6e"
+      url "https://github.com/simon0191/claudecodeproxy/releases/download/v0.1.4/claudecodeproxy_0.1.4_linux_amd64.tar.gz"
+      sha256 "84c2416d984e9f94605196467526eb283b8eefe1d3b80c7ba1e314e04e0004c7"
       define_method(:install) do
         bin.install "claudecodeproxy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/simon0191/claudecodeproxy/releases/download/v0.1.3/claudecodeproxy_0.1.3_linux_arm64.tar.gz"
-      sha256 "cc7240768f4d80c49329f5895197f8337d5d5e4d8be4310a3cfaa232bfa8c686"
+      url "https://github.com/simon0191/claudecodeproxy/releases/download/v0.1.4/claudecodeproxy_0.1.4_linux_arm64.tar.gz"
+      sha256 "488cded8581832be73ef5e47b6774c4610745872455286686de3ec774b118f05"
       define_method(:install) do
         bin.install "claudecodeproxy"
       end
